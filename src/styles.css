@@ -1,0 +1,70 @@
+:root {
+  --title-text: "Playwrite IT Moderna", cursive;
+  --body-text: "Poppins", sans-serif;
+  --color-one: #2e4374;
+  --color-two: #4b527e;
+  --color-three: #7c81ad;
+  --color-four: #e5c3a6;
+  --color-five: #824d74;
+  --color-six: #be7b72;
+  --color-seven: #fdaf7b;
+  --grad-1: rgba(190, 123, 114, 0.7);
+  --grad-2: rgba(229, 195, 166, 0.4);
+  --color-title: white;
+  --color-text: #;
+}
+body {
+  text-align: center;
+  font-family: var(--body-text);
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.jokes-section {
+  display: block;
+  margin: 30px auto;
+  background: linear-gradient(var(--grad-1), var(--grad-2));
+  max-width: 80%;
+  min-height: 300px;
+  border-radius: 40px;
+}
+#joke {
+  color: var(--color-one);
+  font-size: 26px;
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.btn-branding {
+  display: inline-block;
+  color: var(--color-title);
+  max-width: 180px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  margin: 30px auto 15px;
+  background-color: var(--color-two);
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #joke {
+    font-size: 16px;
+  }
+}
